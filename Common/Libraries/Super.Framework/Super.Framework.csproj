@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E76CF7D7-F86F-4786-A1B2-382B0292E7AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Super.Framework</RootNamespace>
+    <AssemblyName>Super.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Release\Super.FrameworkCore\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\RefDLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>..\..\..\RefDLL\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess.resources">
+      <HintPath>..\..\..\RefDLL\Oracle.DataAccess.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.Database.Extensions">
+      <HintPath>..\..\..\RefDLL\Oracle.Database.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\RefDLL\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AttributeHelper.cs" />
+    <Compile Include="Base\BaseModel.cs" />
+    <Compile Include="Base\BaseTool.cs" />
+    <Compile Include="Base\GenericService.cs" />
+    <Compile Include="Base\StrategyCodeAttribute.cs" />
+    <Compile Include="Base\SystemKey.cs" />
+    <Compile Include="Base\TargetStrategyInfo.cs" />
+    <Compile Include="Base\TypeHelper.cs" />
+    <Compile Include="Cache\CacheManage.cs" />
+    <Compile Include="Cache\OwnCacheManage.cs" />
+    <Compile Include="Config\CacheConfig.cs" />
+    <Compile Include="Config\Config.cs" />
+    <Compile Include="Config\ConfigHelper.cs" />
+    <Compile Include="Config\ConfigItem.cs" />
+    <Compile Include="Base\ExceptionExtensions.cs" />
+    <Compile Include="Base\IOLanguage.cs" />
+    <Compile Include="Base\LanguageService.cs" />
+    <Compile Include="Base\Log.cs" />
+    <Compile Include="Base\LogMessage.cs" />
+    <Compile Include="Base\LogType.cs" />
+    <Compile Include="Base\RunMode.cs" />
+    <Compile Include="Base\StringExpansion.cs" />
+    <Compile Include="Base\SuperApp.cs" />
+    <Compile Include="Base\SuperManager.cs" />
+    <Compile Include="Base\SuperWeb.cs" />
+    <Compile Include="Base\SystemConfig.cs" />
+    <Compile Include="Base\ValidateHelper.cs" />
+    <Compile Include="BuiltIn\DataBaseLog.cs" />
+    <Compile Include="BuiltIn\FileLog.cs" />
+    <Compile Include="BuiltIn\WebLog.cs" />
+    <Compile Include="Config\MySqlConfig.cs" />
+    <Compile Include="Config\OracleConfig.cs" />
+    <Compile Include="Config\SQLiteConfig.cs" />
+    <Compile Include="Config\SqlServerConfig.cs" />
+    <Compile Include="DataBase\DataBaseModel.cs" />
+    <Compile Include="DataBase\DataSuperManage.cs" />
+    <Compile Include="DataBase\GenericDataMySql.cs" />
+    <Compile Include="DataBase\GenericDataOracle.cs" />
+    <Compile Include="DataBase\GenericDataSqlite.cs" />
+    <Compile Include="DataBase\GenericDataSqlServer.cs" />
+    <Compile Include="DataBase\MySqlHelper.cs" />
+    <Compile Include="DataBase\OracleHelper.cs" />
+    <Compile Include="DataBase\QueryInfo.cs" />
+    <Compile Include="DataBase\SimpleQuery.cs" />
+    <Compile Include="DataBase\SqlHelper.cs" />
+    <Compile Include="DataBase\SQLiteHelper.cs" />
+    <Compile Include="DataBase\SuperMySql.cs" />
+    <Compile Include="DataBase\SuperSQLite.cs" />
+    <Compile Include="DataBase\SuperSqlServer.cs" />
+    <Compile Include="DataBase\XMLHelper.cs" />
+    <Compile Include="IBase\ICacheStrategy.cs" />
+    <Compile Include="IBase\IDBHelper.cs" />
+    <Compile Include="IBase\IGenericData.cs" />
+    <Compile Include="IBase\ILanguage.cs" />
+    <Compile Include="IBase\ILog.cs" />
+    <Compile Include="IO\SuperIO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secure\Secret.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

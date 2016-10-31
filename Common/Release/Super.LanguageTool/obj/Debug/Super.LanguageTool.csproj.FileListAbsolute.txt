@@ -1,0 +1,8 @@
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\bin\Debug\Super.LanguageTool.exe
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\bin\Debug\Super.LanguageTool.pdb
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\obj\Debug\Super.LanguageTool.MainForm.resources
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\obj\Debug\Super.LanguageTool.Properties.Resources.resources
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\obj\Debug\Super.LanguageTool.csproj.GenerateResource.Cache
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\obj\Debug\Super.LanguageTool.exe
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\obj\Debug\Super.LanguageTool.pdb
+D:\Projects\TTSP.NET\Common\Release\Super.LanguageTool\obj\Debug\Super.LanguageTool.csprojResolveAssemblyReference.cache
